@@ -1,7 +1,7 @@
 . ~/.zsh/aliases
 
 # changing directory to code project
-function p { cd ~/Projects/$1; }
+function p { cd ~/Projects/$1; rvm gemset use $1; }
 
 # alternative to "rails" command to use templates
 function railsapp {
